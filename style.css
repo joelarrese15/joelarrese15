@@ -1,0 +1,742 @@
+*,*:before,*:after{
+	box-sizing: border-box;
+}
+*{
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: arial black;
+    /* Segunda Pagina */
+    margin: 0;
+	padding: 0;
+    background-image: url(img/2017-05-14-15-07-06.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	height: 90vh;
+}
+.menu{
+	width: 1170px;
+	margin: auto;
+}
+.header-area{
+	background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(img/edificios.jpg);
+	height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+.nav-area{
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+}
+.nav-area li{
+	display: inline-block;
+}
+.nav-area li a{
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.nav-area li a:hover{
+	background: #fff;
+	color: #000;
+}
+.logo{
+	float: left;
+}
+.logo img{
+	width: 100%;
+	padding: 15px 0;
+}
+.banner-text{
+	position: absolute;
+	width: 600px;
+	height: 300px;
+	margin: 18% 30%;
+	text-align: center;
+}
+.banner-text h1{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 60px;
+}
+.banner-text h1 span{
+	color: #00ffff;
+}
+.banner-text p{
+	color: #fff;
+	font-size: 18px;
+	line-height: 1.9;
+}
+.banner-text a{
+	border: 1px solid #fff;
+	color: #fff;
+	display: inline-block;
+	margin-top: 20px;
+	font-size: 14px;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 10px 25px;
+}
+.banner-text a:hover{
+	background: #fff;
+	color: #000;
+}
+
+@media (max-width: 800px){
+	.menu{
+		width: 100%;
+	}
+	.logo{
+		float: none;
+		width: 50%;
+		text-align: center;
+		margin: auto;
+	}
+	.nav-area{
+		float: none;
+		margin-top: 0;
+		text-align: center;
+	}
+	.nav-area li a{
+		padding: 5px;
+		font-size: 11px;
+	}
+	.banner-text{
+		width: 100%;
+		height: auto;
+		margin: 20% 0;
+	}
+	.banner-text h1{
+		font-size: 30px;
+	}
+	.banner-text p{
+		font-size: 16px;
+		width: 90%;
+		margin: auto;
+		line-height: 1.5;
+	}
+}
+
+/* Segunda Pagina */
+.wrapper{
+	width: 1170px;
+    margin: 5% auto 38%;
+}
+.wrapper h2{
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	font-size: 60px;
+	color: #fff;
+	margin: 0;
+}
+.single-service{
+	position: relative;
+	width: 31%;
+	height: 320px;
+	background: #fff;
+	box-sizing: border-box;
+	padding: 0 15px;
+	transition: .5s;
+	overflow: hidden;
+	float: left;
+	margin: 0 10px;
+	text-align: center;
+}
+.line{
+	width: 150px;
+	height: 3px;
+	background: #fff;
+	margin: 0 auto 60px auto;
+}
+.single-service p{
+	color: #262626;
+	font-size: 14px;
+}
+.single-service h3{
+	font-size: 25px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #262626;
+}
+.social{
+	width: 60px;
+	height: 60px;
+	background: #262626;
+	border-radius: 50%;
+	margin: 5% auto;
+}
+.social i{
+	font-size: 30px;
+	padding: 15px;
+	color: #fff;
+}
+.single-service span{
+	position: absolute;
+	top: 0;
+	left: -110%;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	transition: .7s;
+	transform: skewX(10deg);
+}
+.single-service:hover span{
+	left: 110%;
+}
+@media (max-width: 600px){
+	.wrapper{
+		width: 100%;
+	}
+	.single-service{
+		width: 95%;
+		margin-bottom: 30px;
+	}
+	.wrapper h2{
+		font-size: 30px;
+	}
+}
+
+/* Pagina 3 */
+.wrapper2{
+    background: #fff;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+.header{
+    padding: 16px;
+    letter-spacing: 2px;
+    background: #262626;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    color: #fff;
+}
+.main-text{
+    padding: 16px;
+    line-height: 24px;
+    display: none;
+}
+.header span{
+    position: absolute;
+    right: 20px;
+}
+.active{
+    display: block;
+}
+
+/* Cuarta Pagina */
+.single-price{
+	text-align: center;
+	background: #262626;
+    margin-top: 20px;
+    margin-bottom: 120px;
+	transition: 0.7s;
+}
+.single-price h3{
+	font-size: 25px;
+	font-weight: 600;
+	text-align: center;
+	margin: 0;
+	margin-top: -80px;
+	font-family: arial black;
+	color: #fff;
+}
+.single-price h4{
+	font-size: 48px;
+	font-weight: 500;
+	color: #fff;
+}
+.single-price h4 span.sup{
+	vertical-align: text-top;
+	font-size: 25px;
+}
+.deal-top{
+	position: relative;
+	background: #16a086;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding: 136px 24px 0;
+}
+.deal-top:after{
+	position: absolute;
+	content: "";
+	left: 0;
+	bottom: -50px;
+	width: 0;
+	height: 0;
+	border-top: 50px solid #16a086;
+	border-left: 175px solid transparent;
+	border-right: 183px solid transparent;
+}
+.deal-bottom{
+	padding: 56px 16px 0;
+}
+.deal-bottom ul{
+	margin: 0;
+	padding: 0;
+}
+.deal-bottom ul li{
+	font-size: 16px;
+	color: #fff;
+	font-weight: 300;
+	margin-top: 16px;
+	border-top: 1px solid #ddd;
+	padding-top: 16px;
+	list-style: none;
+}
+.btn-area a{
+	display: inline-block;
+	font-size: 18px;
+	color: #fff;
+	background: #16a086;
+	padding: 8px 24px;
+	margin-top: 32px;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: none;
+}
+.single-price:hover{
+	background: #16a086;
+}
+.single-price:hover .deal-top{
+	background: #262626;
+}
+.single-price:hover .deal-top:after{
+	border-top: 50px solid #262626;
+}
+.single-price:hover .btn-area a{
+	background: #262626;
+}
+
+/* Quinta Pagina */
+.wrapper3{
+	/* height: 100vh; */
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(to right, #0181ff, #00b6ff);
+}
+.form-area{
+	background-color: #fff;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 30px;
+	box-shadow: 0 40px 20px rgba(0,0,0,0.5)
+}
+.img-area{
+	width: 100%;
+}
+.right-text h2{
+	font-weight: 600;
+	font-size: 25px;
+	margin: 0 0 30px;
+}
+.right-text a{
+	background: #00ad5e;
+	color: #fff;
+	display: inline-block;
+	margin-top: 35px;
+	padding: 10px 30px;
+	text-decoration: none;
+	border-radius: 25px;
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 3px;
+}
+div.img-area{
+	height: 300px;
+	width: 100%;
+	background: url(img/edificios.jpg);
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.left-text{
+	padding: 100px 60px;
+	color: #fff;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+.left-text p{
+	text-transform: none;
+}
+.left-text i{
+	font-size: 25px;
+	color: #fff;
+	margin-right: 25px;
+}
+.right-text{
+	margin: 60px 40px;
+}
+.right-text input{
+	width: 100%;
+	margin-bottom: 15px;
+	padding: 10px;
+	border-radius: 25px;
+}
+.right-text textarea{
+	width: 100%;
+	padding: 10px;
+	border-radius: 25px;
+	font-family: lato;
+}
+@media screen and (min-width: 768px){
+	div.form-area{
+		flex-direction: row;
+        width: 100%;
+	}
+	div.img-area{
+		height: 420px;
+		min-width: 360px;
+	}
+	div.right-text{
+		margin: 0 60px;
+		max-width: 640px;
+	}
+}
+@media screen and (min-width: 1024px){
+	div.form-area{
+        max-width: 1000px;
+	}
+}
+@media screen and (max-width: 320px){
+	.img-area{
+		display: none;
+	}
+	.right-text{
+		margin: 30px 25px;
+		text-align: center;
+	}
+	.right-text input{
+		padding: 15px 5px;
+	}
+	.right-text textarea{
+		padding: 15px 5px;
+	}
+}
+
+/* Sexta Pagina */
+footer{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: row wrap;
+	padding: 145px;
+	color: #fff;
+	background-color: #011c39;
+}
+.footer > *{
+	flex: 1 100%;
+}
+.footer-left{
+	margin-right: 1.25em;
+	margin-bottom: 2em;  
+}
+.footer-left img{
+	width: 20%;
+}
+h2{
+	font-weight: 600;
+	font-size: 17px;
+}
+.footer ul{
+	list-style: none;
+	padding-left: 0;
+}
+.footer li{
+	line-height: 2em;
+}
+.footer a{
+	text-decoration: none;
+}
+.footer-right{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: row wrap;
+}
+.footer-right > *{
+	flex: 1 50%;
+	margin-right: 1.25em;
+}
+.box a{
+	color: #999;
+}
+.footer-bottom{
+	text-align: center;
+	color: #999;
+	padding-top: 50px;
+}
+.footer-left p{
+	padding-right: 20%;
+	color: #999;
+}
+.socials a{
+	background: #364a62;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	margin-right: 10px;
+}
+.socials a i{
+	color: #e7f2f4;
+	padding: 10px 12px;
+	font-size: 20px;
+}
+@media screen and (min-width: 600px){
+	.footer-right > *{
+		flex: 1;
+	}
+	.footer-left{
+		flex: 1 0px;
+	}
+	.footer-right{
+		flex: 2 0px;
+	}
+}
+
+
+@media (max-width: 600px){
+	.footer{
+		padding: 15px;
+	}
+}
+
+/* Septima pagina */
+.single-works{
+	margin-bottom: 30px;
+	overflow: hidden;
+	position: relative;
+	transition: all 0.3s ease 0s;
+	box-shadow: 5px 5px 15px #000;
+}
+.single-works img{
+	width: 100%;
+	height: auto;
+}
+.single-works .title{
+	font-size: 25px;
+	font-weight: 700;
+	color: tomato;
+	margin: 0 0 15px 0;
+}
+.overlay-text .post{
+	display: block;
+	font-weight: 600;
+	font-size: 20px;
+	color: #fff;
+}
+.single-works .overlay-text{
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+	color: #fff;
+	background: rgba(0,0,0,0.6);
+	text-align: center;
+	padding-top: 20%;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all 0.6s ease 0s;
+}
+.single-works .overlay-text:before{
+	border-left: 1px solid rgba(255,255,255,0.9);
+	border-right: 1px solid rgba(255,255,255,0.9);
+	left: 30px;
+	right: 30px;
+}
+.single-works .overlay-text:after{
+	border-top: 1px solid rgba(255,255,255,0.9);
+	border-bottom: 1px solid rgba(255,255,255,0.9);
+	top: 30px;
+	bottom: 30px;
+}
+.single-works .overlay-text:before, .single-works .overlay-text:after{
+	content: '';
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	bottom: 20px;
+	right: 20px;
+	opacity: 0;
+	z-index: 1;
+	transform: scale(1.5);
+	transition: all 0.6s ease 0.2s;
+}
+.single-works:hover{
+	transform: translateY(-8px);
+}
+.single-works:hover .overlay-text{
+	opacity: 1;
+}
+.single-works:hover .overlay-text:before,
+.single-works:hover	.overlay-text:after{
+	opacity: 1;
+	transform: scale(1);
+}
+
+/* Octaba pagina */
+.pricing-area{
+	padding: 80px 0;
+}
+.single-price{
+	padding-bottom: 25px;
+	background: #fff;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+	transition: all .3s ease-in-out;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.7);
+}
+.single-price a{
+	background: darkorchid;
+	color: #fff;
+	padding: 15px 30px;
+	text-decoration: none;
+	border-radius: 25px;
+	display: inline-block;
+}
+.single-price:hover{
+	transform: scale(1.05);
+}
+.single-price:before{
+	content: '';
+	width: 100%;
+	height: 350px;
+	background: darkorchid;
+	position: absolute;
+	top: -150px;
+	left: 0;
+	transform: skewY(-20deg);
+}
+.single-price .price-header{
+	padding: 20px 20px 60px;
+	position: relative;
+	text-align: left;
+}
+.single-price .title{
+	font-size: 30px;
+	font-weight: 600;
+	color: #fff;
+	text-transform: uppercase;
+	margin: 0;
+}
+.single-price .price-value{
+	display: inline-block;
+	width: 170px;
+	height: 110px;
+	padding: 15px;
+	border-top: none;
+	position: relative;
+}
+.single-price .value{
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	border: 5px solid #262626;
+	border-top: none;
+	border-bottom: none;
+	z-index: 1;
+	position: relative;
+}
+.single-price .value:before,
+.single-price .value:after{
+	content: '';
+	width: 97px;
+	height: 97px;
+	background: #fff;
+	border: 5px solid #262626;
+	border-bottom: none;
+	border-right: none;
+	position: absolute;
+	top: -48px;
+	left: 50%;
+	z-index: -1;
+	transform: translateX(-50%) scaleY(0.5) rotate(45deg);
+}
+.single-price .value:after{
+	border-right: 5px solid #262626;
+	border-bottom: 5px solid #262626;
+	border-top: none;
+	border-left: none;
+	top: auto;
+	bottom: -48px;
+}
+.single-price .currency{
+	display: inline-block;
+	font-size: 30px;
+	margin-top: 7px;
+	vertical-align: top;
+}
+.single-price .amount{
+	display: inline-block;
+	font-size: 40px;
+	font-weight: 600;
+	line-height: 65px;
+}
+.single-price .amount span{
+	display: inline-block;
+	font-size: 30px;
+	font-weight: normal;
+	vertical-align: top;
+	margin-top: -7px;
+}
+.single-price .month{
+	display: block;
+	font-size: 16px;
+	line-height: 0;
+}
+.single-price .deals{
+	padding: 70px 0 0;
+	margin-bottom: 20px;
+	list-style: none;
+	text-align: center;
+	transition: all 0.3s ease 0s;
+}
+.single-price .deals li{
+	padding: 7px 0;
+	font-size: 16px;
+	color: #808080;
+	position: relative;
+}
+@media only screen and (max-width: 990px){
+	.single-price{
+		margin-bottom: 30px;
+	}
+}
+@media only screen and (max-width: 767px){
+	.single-price:before{
+		transform: skewY(-15deg);
+	}
+	.single-price .title{
+		font-size: 22px;
+	}
+}
